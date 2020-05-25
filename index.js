@@ -12,7 +12,7 @@ app.post("/", async function (req, res, next) {
   next();
 });
 
-app.listen(3000, function () {
+app.listen(process.env.PORT, function () {
   console.log("Server start at 3000 port");
 });
 
